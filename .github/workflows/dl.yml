@@ -1,5 +1,3 @@
-# youtube-dl -o YJIIWD.mp4 "https://www.youtube.com/watch?v=z6ep308goxQ"
-
 name: dl
 on:
   workflow_dispatch:
@@ -12,5 +10,5 @@ jobs:
       - run: |
           pip install -U youtube-dl aliyunpan
           echo "refresh_token: '${{ secrets.ALYP }}'"  >  ~/.config/aliyunpan.yaml
-          youtube-dl -o HCMJIDW.mp4 "https://www.youtube.com/watch?v=Opy-SjDU0UY"
-          aliyunpan-cli upload HCMJIDW.mp4
+          youtube-dl -o YJIIWD.mp4 "https://www.youtube.com/watch?v=z6ep308goxQ"
+          aliyunpan-cli upload YJIIWD.mp4
