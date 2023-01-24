@@ -10,7 +10,5 @@ jobs:
       - run: |
           pip install -U youtube-dl aliyunpan
           echo "refresh_token: '${{ secrets.ALYP }}'"  >  ~/.config/aliyunpan.yaml
-          cat ~/.config/aliyunpan.yaml
-          aliyunpan-cli list
-          youtube-dl "https://www.youtube.com/watch?v=Opy-SjDU0UY"
-          
+          youtube-dl -o HCMJIDW.mp4 "https://www.youtube.com/watch?v=Opy-SjDU0UY"
+          aliyunpan-cli upload HCMJIDW.mp4
